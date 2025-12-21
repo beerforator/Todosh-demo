@@ -1,0 +1,230 @@
+.dashboardContainer {
+    display: grid;
+
+    gap: $spacing4;
+    padding: 2*$spacing2 4*$spacing2;
+
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+
+    // 1600
+    @media (max-width: 1300px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media (max-width: 1200px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 800px) {
+        grid-template-columns: 1fr;
+    }
+
+    user-select: none !important;
+}
+
+@mixin mobile-reset {
+    @media (max-width: 800px) {
+        grid-column: span 1 !important;
+        grid-row: auto !important; 
+        min-height: 300px;
+    }
+}
+
+.todayTasksWidget,
+.carWidget {
+    grid-column: span 2;
+    grid-row: span 2;
+
+    @include mobile-reset;
+}
+
+.calendarWidget {
+    grid-column: span 2;
+    grid-row: span 3;
+
+    padding: 0 !important;
+    
+    @include mobile-reset;
+}
+
+.artWidget,
+.weatherWidget {
+    grid-column: span 1;
+    grid-row: span 2;
+
+    @include mobile-reset;
+}
+
+.profileWidget,
+.notificationsWidget,
+.clockWidget {
+    grid-column: span 1;
+    grid-row: span 1;
+
+    max-height: 140px;
+
+    @include mobile-reset;
+}
+
+// Widgets
+
+// Image Widget
+
+.allImageWidget_inner {
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+
+    object-fit: cover;
+
+    position: absolute;
+
+    background-size: cover;
+    background-position: center;
+}
+
+// Tasks
+
+.todayTasksWidget_inner {
+    height: 100%;
+    max-height: 246px;
+    padding-left: 0 !important;
+
+    background-color: $color-innerPaper-block;
+    border-radius: 12px;
+}
+
+// Art
+
+.artWidget_inner {
+    background-image: url('https://i.pinimg.com/1200x/a6/31/4c/a6314c3c62b8bb163eedbabd9b10fc1f.jpg');
+}
+
+// Calendar
+
+.calendarWidget_inner {
+    padding-left: 0 !important;
+}
+
+// Weather
+
+.weatherWidget_inner {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing4;
+
+    height: 100%;
+}
+
+.weatherWidget_section {
+    display: flex;
+    flex-direction: row;
+    gap: 4%;
+
+    justify-content: space-around;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+}
+
+.weatherWidget_section img {
+    width: 30px;
+    height: 30px;
+}
+
+.weatherWidget_temperature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weatherWidget_timeBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+
+    border-radius: 15px;
+    background-color: $color-innerPaper-block
+}
+
+// Notifications 
+
+.notificationsWidget_inner {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+}
+
+.notificationsWidget_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    padding: $spacing2;
+}
+
+// Profile
+
+.profileWidget_inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 3*$spacing1;
+}
+
+.profileWidget_texBlock {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing2;
+
+    padding: $spacing2 !important;
+}
+
+// Car
+
+.carWidget_inner {
+    background-image: url('https://i.pinimg.com/1200x/5e/f6/42/5ef642037e5b651111b6059609ecf54f.jpg');
+}
+
+// Clock
+
+.clockWidget_inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 10%;
+
+    padding: 0;
+}
+
+.clockWidget_clock {
+    text-align: center;
+
+    width: 100%;
+
+    font-size: 46px;
+    font-weight: 600;
+}
+
+.clockWidget_textBlock {
+    display: flex;
+    flex-direction: column;
+
+    width: fit-content;
+    opacity: .6;
+
+    padding: $spacing2;
+}

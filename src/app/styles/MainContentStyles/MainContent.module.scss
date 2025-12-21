@@ -1,0 +1,220 @@
+// Main Content Header
+
+.listHeader {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: $spacing4;
+
+    z-index: 3;
+
+    padding: 3*$spacing2 0 2*$spacing2 4*$spacing2;
+
+    :global(.MuiListItemIcon-root) {
+        color: $color-icons;
+        transition: color 0.2s ease-in-out;
+    }
+
+    :global(.MuiIconButton-root) {
+        color: $color-icons;
+        transition: color 0.2s ease-in-out;
+    }
+
+    user-select: none !important;
+}
+
+.listHeader input {
+    height: 22px !important;
+}
+
+.listHeader button {
+    margin-right: $spacing4;
+}
+
+// Scrollable View Port
+
+.scrollableView {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    overflow-y: auto;
+    overflow-x: visible;
+    padding-left: 4*$spacing2;
+}
+
+.scrollableView_calendar {
+    display: block;
+
+    user-select: none !important;
+
+    :global {
+        --fc-button-bg-color: transparent;
+        --fc-button-border-color: transparent;
+        --fc-button-text-color: $color-text;
+
+        --fc-button-active-bg-color: rgba(0, 0, 0, 0.05);
+        --fc-button-active-border-color: transparent;
+        --fc-button-active-text-color: #333;
+
+        --fc-button-hover-bg-color: rgba(0, 0, 0, 0.05);
+        --fc-button-hover-border-color: transparent;
+    }
+
+    :global(.fc-toolbar.fc-header-toolbar) {
+        margin: 0 10px !important;
+    }
+
+    :global(.fc-button) {
+        box-shadow: none !important;
+        border-radius: 8px !important;
+        text-transform: capitalize;
+        font-weight: 500;
+        padding: 3px 14px;
+        transition: background-color 0.2s ease;
+
+        &:focus {
+            box-shadow: none !important;
+        }
+    }
+
+    :global(.fc-scrollgrid) {
+        border: none !important;
+        border-collapse: separate !important;
+    }
+
+    :global(.fc-scrollgrid td),
+    :global(.fc-scrollgrid th) {
+        border: $spacing2 solid transparent !important;
+    }
+
+    :global(.fc-daygrid-day-frame) {
+        background-color: $color-day-block;
+        border-radius: 10px;
+        transition: background-color 0.2s ease;
+
+        border-top: none !important;
+    }
+
+    // Номер дня
+    :global(.fc-daygrid-day-top) {
+        padding: 2px 12px;
+        font-weight: 600;
+        color: $color-text;
+        font-size: 0.9rem;
+        opacity: .4;
+    }
+
+    :global(.fc-day-other .fc-daygrid-day-frame) {
+        background-color: $color-oterMonthDay-block;
+    }
+
+    :global(.fc-daygrid-day.fc-day-today) {
+        background-color: transparent;
+    }
+
+    :global(.fc-day-today .fc-daygrid-day-frame) {
+        background-color: $color-today-block;
+    }
+
+    :global(.fc-col-header-cell-cushion) {
+        display: block;
+        background-color: $color-paper-block;
+        padding: 4px;
+        border-radius: 10px;
+        font-weight: 700;
+        color: #333;
+        text-transform: capitalize;
+    }
+
+    :global(.fc-event) {
+        background-color: transparent !important;
+        border: none !important;
+        box-shadow: 0 4px 8px rgba(77, 77, 77, 0.1);
+        border-radius: 10px !important;
+        cursor: pointer;
+
+        margin-top: $spacing1 !important;
+
+        &:focus {
+            outline: none !important;
+            box-shadow: none !important;
+            background-color: transparent !important;
+        }
+
+        &.fc-event-selected {
+            box-shadow: none !important;
+        }
+
+        &::after {
+            display: none !important;
+        }
+
+        &::before {
+            display: none !important;
+        }
+    }
+
+    :global(.fc-direction-ltr .fc-daygrid-event.fc-event-start) {
+        margin-left: $spacing1 !important;
+    }
+
+    :global(.fc-direction-ltr .fc-daygrid-event.fc-event-end) {
+        margin-right: $spacing1 !important;
+    }
+}
+
+.scrollableView_miniCalendar {
+    :global(.fc-daygrid-day-events) {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        justify-content: center;
+        gap: 4px;
+        margin: auto $spacing1 $spacing1 !important;
+
+        min-height: 1em !important;
+        max-height: 22px !important;
+    }
+
+    :global(.fc-event-title) {
+        display: none !important;
+    }
+
+    :global(.fc-event-time) {
+        display: none !important;
+    }
+
+    :global(.fc-daygrid-event) {
+        margin: 0 !important;
+        padding: 0 !important;
+        background: none !important;
+        border: none !important;
+    }
+
+    :global(.fc-direction-ltr .fc-daygrid-event.fc-event-start) {
+        margin-left: 0 !important;
+    }
+
+    :global(.fc-direction-ltr .fc-daygrid-event.fc-event-end) {
+        margin-right: 0 !important;
+    }
+}
+
+.staticView {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+    padding-left: 4*$spacing2;
+}

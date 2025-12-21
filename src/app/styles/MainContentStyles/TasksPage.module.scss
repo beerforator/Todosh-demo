@@ -1,0 +1,174 @@
+.collapsed {
+    padding-right: $detailPane-width + $spacing4;
+}
+
+// Task Card
+
+.taskCard_color_container {
+    position: relative;
+    z-index: 2;
+
+    border-radius: 11px;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+    background-color: $color-paper-block;
+
+    padding-left: 3*$spacing1;
+
+    transition: transform .1s ease-in-out;
+}
+
+.draggableTask {
+    position: relative;
+    z-index: 10 !important;
+
+    box-shadow: $shadow-paper-block;
+}
+
+.taskCard_container {
+    padding: $spacing4 !important;
+    box-shadow: none !important;
+}
+
+.taskCard_container button {
+    margin: 0 !important;
+}
+
+.taskCard_stuff {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: $spacing4;
+
+    opacity: 1;
+
+    :global(.MuiListItemIcon-root) {
+        color: $color-icons;
+    }
+}
+
+.taskCard_isCompleted {
+    opacity: 0.6;
+}
+
+.actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+
+    gap: $spacing4;
+
+    width: 130px;
+
+    :global(.MuiIconButton-root) {
+        color: $color-icons;
+    }
+
+    opacity: 1;
+
+    transition: opacity 0.2s ease-in-out;
+}
+
+.unhovered_actions {
+    opacity: 0;
+}
+
+// Task Card Text
+
+.taskCard_textContent {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.cardItemText {
+    width: 100%;
+
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cardTextDivider {
+    width: 1px;
+    height: 20px;
+    flex-shrink: 0;
+
+    background-color: #828282;
+    border-radius: 2px;
+}
+
+.cardDate {
+    width: 100%;
+    min-width: 120px;
+    max-width: 120px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-right: $spacing4 !important;
+}
+
+// Empty line
+
+.emptyLine_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.emptyLineEffect {
+    height: 1px;
+    width: 97%;
+    margin-top: 48px; //52px
+    margin-bottom: 16px;
+
+    display: flex;
+    align-items: center;
+
+    background-color: $color-warm-grey;
+    border-radius: 5px;
+}
+
+// Inline Create
+
+.create_container {
+    width: 100%;
+
+    z-index: 3;
+
+    display: flex;
+    align-items: center;
+    padding-left: 4*$spacing2 !important;
+    margin: auto 0 0 !important;
+
+    overflow: visible;
+}
+
+.create_container button {
+    border-radius: 10px !important;
+}
+
+.cardButton {
+    color: $color-text !important;
+    text-transform: none !important;
+    display: flex;
+    justify-content: start !important;
+
+    width: 100%;
+
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)!important;
+}
+
+.createInput input {
+    height: 8px !important;
+}

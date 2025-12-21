@@ -1,0 +1,85 @@
+.header_inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-left: 4*$spacing2;
+}
+
+.breadcrumbs_container {
+    margin: auto 0 0;
+
+    user-select: none !important;
+}
+
+.headerPaperBlock {
+    display: flex;
+    flex-direction: row;
+    position: static;
+
+    padding-right: $spacing2;
+}
+
+// Nav
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    gap: 1*$spacing2;
+}
+
+.navLink {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+    color: $color-text;
+    padding: 8px;
+
+    cursor: pointer;
+    flex-grow: 1;
+
+    border-radius: $spacing2;
+
+    user-select: none !important;
+
+    :global(.MuiListItemIcon-root) {
+        color: $color-icons;
+    }
+
+    &:hover {
+        :global(.MuiListItemIcon-root) {
+            color: $color-paper-block;
+        }
+
+        background-color: $color-active-primary;
+        color: $color-paper-block;
+    }
+
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navLinkUser {
+    padding: 0;
+    gap: 10px;
+    margin: 0 $spacing1 0;
+}
+
+// Form
+
+.nav form div {
+    height: 36px;
+    border-radius: $spacing2;
+
+    user-select: none !important;
+}
+
+.nav form input {
+    width: 120px;
+}
+
+.nav fieldset {
+    border-width: 0 !important;
+}

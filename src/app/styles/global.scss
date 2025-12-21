@@ -1,0 +1,107 @@
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: $font-size-paper-block;
+
+    overflow: hidden;
+}
+
+body {
+    font-size: $font-size-paper-block;
+}
+
+// Active Nav Link
+
+nav a.active {
+    :global(.MuiListItemIcon-root) {
+        color: $color-paper-block;
+    }
+
+    background-color: $color-active-primary;
+    color: $color-paper-block;
+
+}
+
+// Paper Block
+
+.paperBlock {
+    border-radius: 10px;
+    padding: $spacing1;
+    // background-color: $color-paper-block;
+    box-shadow: $shadow-paper-block;
+    transition: width 0.2s ease-in-out;
+
+    backdrop-filter: blur(8.8px);
+    -webkit-backdrop-filter: blur(8.8px);
+
+    transition: backdrop-filter .3s ease-in-out;
+    transition: background-color .3s ease-in-out;
+}
+
+::-webkit-scrollbar {
+    width: $spacing4;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $color-paper-block;
+    background-clip: content-box;
+    border-radius: 10px;
+
+    border: 5px solid transparent;
+}
+
+
+.widgetPlaceholder {
+    flex-shrink: 1;
+    height: 100%;
+    min-height: 140px;
+    padding: 3*$spacing1 $spacing4;
+    border-radius: 20px !important;
+
+    position: relative;
+    overflow: hidden;
+
+
+    &:hover {
+        z-index: 100;
+    }
+
+    :global(.MuiTypography-root) {
+        font-size: inherit;
+        font-weight: 600;
+    }
+}
+
+.tagView {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+
+    gap: $spacing4;
+
+    margin-bottom: $spacing4;
+    padding-top: $spacing2;
+}
+
+.widgetPlaceholder .tagView {
+    margin-bottom: 0;
+    gap: $spacing2 !important;
+
+    padding: $spacing2;
+}

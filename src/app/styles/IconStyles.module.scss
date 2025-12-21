@@ -1,0 +1,79 @@
+.iconContainer {
+    display: -webkit-inline-flex;
+}
+
+.allIconStyle {
+    color: inherit;
+    stroke-width: 1;
+}
+
+.logoIconStyle {
+    width: 38px;
+    height: 38px;
+}
+
+.userIconStyle {
+    width: 36px;
+    height: 36px;
+
+    transform: translate(-0.5px, -0.5px);
+}
+
+.navIconStyle {
+    width: 20px;
+    height: 20px;
+}
+
+.filterIconStyle {
+    width: 18px;
+    height: 18px;
+}
+
+.filterCircle_container {
+    width: 18px;
+    height: 18px;
+    
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+.filterCircleStyle {
+    width: 12px;
+    height: 12px;
+
+    border-radius: 50%;
+    outline: 0.50px #F1FAFF solid;
+}
+
+.circleStyleCalendar {
+    width: 12px;
+    height: 12px;
+
+    border-radius: 50%;
+    border: 3.5px #F1FAFF solid;
+    background-color: transparent;
+}
+
+.chevron_container {
+    width: 15px;
+    height: 15px;
+}
+
+.chevronStyle {
+    width: 15px;
+    height: 15px;
+}
+
+.taskIconStyle {
+    width: 22px;
+    height: 22px;
+}
+
+.iconDisabled {
+    cursor: wait !important;
+    opacity: .8;
+}

@@ -1,0 +1,139 @@
+.profilePage_container {
+    gap: 7*$spacing1;
+    padding: 2*$spacing2 4*$spacing2;
+}
+
+.profilePage_section {
+    display: flex;
+    flex-direction: column;
+    gap: 7*$spacing1;
+
+    height: 100%;
+}
+
+.sectionBlock {
+    border-radius: 20px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $spacing4 !important;
+
+    width: 350px;
+
+    padding: $spacing4 !important;
+}
+
+.sectionBlock_title {
+    width: 100%;
+
+    :global(.MuiTypography-root) {
+        font-size: inherit;
+        font-weight: 600;
+    }
+}
+
+.sectionBlockLogo {
+    width: 110px;
+    height: 110px;
+
+    transform: translate(-0.5px, -0.5px);
+
+    stroke-width: .4 !important;
+}
+
+.sectionBlock_paragraph {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing2;
+    width: 100%;
+
+    margin-bottom: $spacing2;
+}
+
+.sectionBlock_lastParagraph {
+    margin: auto 0 0;
+}
+
+.sectionBlock_paragraphText {
+    :global(.MuiTypography-root) {
+        font-size: inherit;
+        font-weight: 500;
+        min-width: 18px;
+    }
+}
+
+.sectionBlock_paragraphBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 3*$spacing1;
+    padding: 3*$spacing1 $spacing4;
+
+    width: 100%;
+
+    background-color: transparent;
+
+    border-radius: 10px;
+    border: 1px solid #4b4848;
+
+    text-overflow: ellipsis;
+}
+
+.sectionBlock_lastParagraph .sectionBlock_paragraphBlock {
+    gap: $spacing1 !important;
+}
+
+.sectionBlock_paragraphBlock div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3*$spacing1;
+
+    :global(.MuiCheckbox-root) {
+        color: $color-icons;
+    }
+}
+
+.sectionBlock button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 100%;
+    padding: 12px 14px;
+    gap: 20px;
+    border: none;
+    border-radius: 10px;
+
+    background-color: $color-innerPaper-block;
+
+    cursor: pointer;
+
+    color: $color-text;
+
+    :global(.MuiListItemIcon-root) {
+        color: $color-icons;
+    }
+
+    &:hover {
+        :global(.MuiListItemIcon-root) {
+            color: $color-paper-block;
+        }
+
+        background-color: $color-active-primary;
+        color: $color-paper-block;
+    }
+
+    transition: background-color 0.3s ease-in-out;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: $color-icons;
+    margin: 10px auto 4px;
+
+    border-radius: 2px;
+
+    opacity: .4;
+}

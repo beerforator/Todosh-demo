@@ -1,0 +1,35 @@
+.menuStyle {
+    :global(.MuiMenu-paper) {
+        display: flex;
+        flex-shrink: 0;
+
+        width: fit-content;
+
+        border: none;
+        border-radius: 10px;
+        background-color: transparent !important;
+
+        backdrop-filter: blur(8.8px);
+        -webkit-backdrop-filter: blur(8.8px);
+    }
+}
+
+.menu_container {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing2;
+
+    padding: $spacing1 !important;
+
+    transition: none;
+}
+
+.menuItem {
+    display: flex;
+    flex-direction: row;
+    gap: $spacing4 !important;
+
+    padding: $spacing1 3*$spacing1 !important;
+
+    border-radius: 8px !important;
+}

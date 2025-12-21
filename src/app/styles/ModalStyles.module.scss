@@ -1,0 +1,20 @@
+.modalContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: $spacing4!important;
+
+    display: flex;
+    flex-direction: column;
+    gap: $spacing4
+}
+
+.modalContainer_button {
+    width: 100%;
+    padding: $spacing2 !important;
+
+    color: $color-paper-block !important;
+    background-color: $color-active-primary !important;
+}

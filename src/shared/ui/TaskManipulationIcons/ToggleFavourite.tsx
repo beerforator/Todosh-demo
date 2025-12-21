@@ -1,0 +1,34 @@
+import React from "react";
+import { IconButton } from '@mui/material';
+import { StarEmptyIcon, StarFullIcon } from "../Icons/TaskIcon";
+
+import style from '@/app/styles/IconStyles.module.scss'
+
+interface ToggleFavouriteProps {
+    isFavourite: boolean;
+    isSettingToggle: boolean;
+    handleToggle?: (e: React.MouseEvent) => void;
+}
+
+export const ToggleFavourite = React.memo(({ isFavourite, isSettingToggle, handleToggle}: ToggleFavouriteProps) => {
+    // if (isSettingToggle) {
+    //     const spinnerSize = size === 'small' ? 16 : 16
+    //     return <CircularProgress size={spinnerSize} sx={{ p: '12px' }} />;
+    // }
+
+    return (
+        <IconButton
+            onClick={handleToggle}
+            onMouseDown={(e) => e.stopPropagation()}
+            disabled={isSettingToggle}
+
+            className={isSettingToggle
+                ? (style.taskIconStyle + ' ' + style.iconDisabled)
+                : style.taskIconStyle}
+        >
+            {isFavourite
+                ? <StarFullIcon />
+                : <StarEmptyIcon />}
+        </IconButton>
+    )
+})

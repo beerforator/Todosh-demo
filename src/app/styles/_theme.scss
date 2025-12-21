@@ -1,0 +1,55 @@
+/* Переменные под пользователя*/
+:root {
+  --backgroundGradient: linear-gradient(270deg, #DEE9EF 0%, #DEE6ED 100%);
+
+  --glass-color: rgba(241, 250, 255, 1);
+
+  --textColor: #050711;
+}
+
+
+/* === Цвета === */
+$color-text: #050711;
+$color-icons: #050711;
+
+$color-paper-block: rgba(241, 250, 255, 1);
+$color-innerPaper-block: rgba(22, 27, 55, .08);
+
+$color-day-block: rgba(22, 27, 55, 0.06);
+$color-today-block: rgba(241, 250, 255, .2);
+$color-oterMonthDay-block: rgba(22, 27, 55, .12);
+
+$color-active-primary: #161B37;
+$color-active-secondary: #C3CBD5;
+
+$color-border: #D1D9E6;
+
+$color-warm-grey: #C8D0D7;
+
+/* === Gradient === */
+// linear-gradient(270deg, #DEE9EF 0%, #DEE6ED 100%);
+// linear-gradient(270deg, #d5988b 0%, #f4d5f6 100%)
+// $gradient-appBackground: var(--backgroundGradient);
+
+
+
+/* === Тени === */
+$shadow-paper-block: 0 4px 30px rgba(0, 0, 0, 0.1);
+//$shadow-paper-block: -2px 0px 13px rgba(0, 0, 0, 0.25);
+//box-shadow:         0px 4px 12px rgba(0, 0, 0, 0.10);
+//                    0 4px 30px rgba(0, 0, 0, 0.1)
+
+/* === Размеры и Отступы === */
+$border-radius-paper-block: 10px;
+$border-radius-innerPaper-block: 10px;
+$sidebar-width: 200px; //186 200
+$sidebar-width-collapsed: 44px; //42 46
+$detailPane-width: 416px; 
+
+$font-size-paper-block: 12px;
+$font-size-innerPaper-block: 14px;
+$font-size-listHeader: 24px;
+
+$spacing1: 4px;
+$spacing2: 8px;
+$spacing4: 16px;
