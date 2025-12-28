@@ -21,8 +21,8 @@
       "isCompleted": true,
       "isFavourite": true,
       "order": 1765994726944,
-      "startDate": "2025-12-16T21:00:00.001Z",
-      "endDate": "2025-12-18T21:00:00.000Z"
+      "startDate": "2025-12-17T21:00:00.001Z",
+      "endDate": "2025-12-19T21:00:00.000Z"
     },
     {
       "id": "447a",
@@ -30,7 +30,7 @@
       "description": "",
       "userOwnerId": "user-1",
       "listOwnerId": "list-1",
-      "isCompleted": false,
+      "isCompleted": true,
       "isFavourite": false,
       "order": 1765994717247,
       "startDate": null,
@@ -42,11 +42,11 @@
       "description": "",
       "userOwnerId": "user-1",
       "listOwnerId": "list-1",
-      "isCompleted": true,
+      "isCompleted": false,
       "isFavourite": true,
       "order": 1765994763920,
-      "startDate": "2025-12-11T21:00:00.001Z",
-      "endDate": "2025-12-12T21:00:00.000Z"
+      "startDate": "2026-01-03T21:00:00.001Z",
+      "endDate": "2026-01-04T21:00:00.000Z"
     },
     {
       "id": "83ab",
@@ -57,8 +57,8 @@
       "isCompleted": true,
       "isFavourite": false,
       "order": 1765994843960,
-      "startDate": "2025-12-15T21:00:00.001Z",
-      "endDate": "2025-12-17T21:00:00.000Z"
+      "startDate": "2025-12-14T21:00:00.001Z",
+      "endDate": "2025-12-16T21:00:00.000Z"
     },
     {
       "id": "3209",
@@ -66,8 +66,8 @@
       "description": "",
       "userOwnerId": "user-1",
       "listOwnerId": "d44f",
-      "isCompleted": false,
-      "isFavourite": false,
+      "isCompleted": true,
+      "isFavourite": true,
       "order": 1765994850816,
       "startDate": "2025-12-17T21:00:00.001Z",
       "endDate": "2025-12-18T21:00:00.000Z"
@@ -79,7 +79,7 @@
       "userOwnerId": "user-1",
       "listOwnerId": "d44f",
       "isCompleted": false,
-      "isFavourite": true,
+      "isFavourite": false,
       "order": 1765994903024,
       "startDate": "2025-12-23T21:00:00.001Z",
       "endDate": "2025-12-24T21:00:00.000Z"
@@ -91,10 +91,10 @@
       "userOwnerId": "user-1",
       "listOwnerId": "d44f",
       "isCompleted": false,
-      "isFavourite": true,
+      "isFavourite": false,
       "order": 1765994932896,
-      "startDate": "2025-12-23T21:00:00.001Z",
-      "endDate": "2025-12-24T21:00:00.000Z"
+      "startDate": "2025-12-22T21:00:00.001Z",
+      "endDate": "2025-12-23T21:00:00.000Z"
     },
     {
       "id": "e1a3",
@@ -133,18 +133,6 @@
       "endDate": "2025-12-16T21:00:00.000Z"
     },
     {
-      "id": "e4ff",
-      "title": "Помыть попу",
-      "description": "",
-      "userOwnerId": "user-1",
-      "listOwnerId": "6b52",
-      "isCompleted": true,
-      "isFavourite": true,
-      "order": 1765995047464,
-      "startDate": "2025-12-14T21:00:00.001Z",
-      "endDate": "2025-12-15T21:00:00.000Z"
-    },
-    {
       "id": "7e68",
       "title": "Пересмотреть чебурашку",
       "description": "",
@@ -153,8 +141,8 @@
       "isCompleted": false,
       "isFavourite": false,
       "order": 1765995068000,
-      "startDate": "2025-12-19T21:00:00.001Z",
-      "endDate": "2025-12-20T21:00:00.000Z"
+      "startDate": "2025-12-31T21:00:00.001Z",
+      "endDate": "2026-01-01T21:00:00.000Z"
     },
     {
       "id": "351e",
@@ -170,63 +158,51 @@
     },
     {
       "id": "6c6b",
-      "title": "Показать приложение хорошему человечку",
+      "title": "Встреча командой",
       "description": "",
       "userOwnerId": "user-1",
       "listOwnerId": "list-2",
-      "isCompleted": false,
-      "isFavourite": false,
+      "isCompleted": true,
+      "isFavourite": true,
       "order": 1765995191864,
-      "startDate": "2025-12-19T21:00:00.001Z",
-      "endDate": "2025-12-21T21:00:00.000Z"
+      "startDate": "2025-12-29T21:00:00.001Z",
+      "endDate": "2025-12-30T21:00:00.000Z"
     },
     {
       "id": "29f7",
-      "title": "Допилить мелкие недочеты",
-      "description": "1. Некоторые баги с датами\n2. Страницу авторизации и лендинг\n3. Поповеры\n4. Маусэвенты",
-      "userOwnerId": "user-1",
-      "listOwnerId": "list-2",
-      "isCompleted": false,
-      "isFavourite": false,
-      "order": 1765995202072,
-      "startDate": "2025-12-18T21:00:00.001Z",
-      "endDate": "2025-12-20T21:00:00.000Z"
-    },
-    {
-      "id": "5b1c",
-      "title": "Опубликовать в профиле",
-      "description": "",
-      "userOwnerId": "user-1",
-      "listOwnerId": "list-2",
-      "isCompleted": false,
-      "isFavourite": false,
-      "order": 1765995231032,
-      "startDate": "2025-12-20T21:00:00.001Z",
-      "endDate": "2025-12-22T21:00:00.000Z"
-    },
-    {
-      "id": "c792",
-      "title": "Устроиться в уборщиком в Tinkoff",
-      "description": "",
-      "userOwnerId": "user-1",
-      "listOwnerId": "list-2",
-      "isCompleted": false,
-      "isFavourite": true,
-      "order": 1765995252088,
-      "startDate": "2025-12-22T21:00:00.001Z",
-      "endDate": "2025-12-24T21:00:00.000Z"
-    },
-    {
-      "id": "efef",
-      "title": "Доделать основные страницы",
+      "title": "Залить последний mr в этом году",
       "description": "",
       "userOwnerId": "user-1",
       "listOwnerId": "list-2",
       "isCompleted": true,
       "isFavourite": false,
+      "order": 1765995202072,
+      "startDate": "2025-12-27T21:00:00.001Z",
+      "endDate": "2025-12-29T21:00:00.000Z"
+    },
+    {
+      "id": "5b1c",
+      "title": "Опубликовать демонстрационную версию в профиле",
+      "description": "",
+      "userOwnerId": "user-1",
+      "listOwnerId": "list-2",
+      "isCompleted": true,
+      "isFavourite": false,
+      "order": 1765995231032,
+      "startDate": "2025-12-25T21:00:00.001Z",
+      "endDate": "2025-12-27T21:00:00.000Z"
+    },
+    {
+      "id": "efef",
+      "title": "Годовой отчет",
+      "description": "",
+      "userOwnerId": "user-1",
+      "listOwnerId": "list-2",
+      "isCompleted": false,
+      "isFavourite": true,
       "order": 1765995191854,
-      "startDate": "2025-11-30T21:00:00.001Z",
-      "endDate": "2025-12-01T21:00:00.000Z"
+      "startDate": "2025-12-30T21:00:00.001Z",
+      "endDate": "2025-12-31T21:00:00.000Z"
     },
     {
       "id": "1233",
@@ -261,6 +237,18 @@
       "order": 1765995448353,
       "startDate": null,
       "endDate": null
+    },
+    {
+      "id": "f623",
+      "title": "Помыть кота",
+      "description": "",
+      "startDate": "2025-12-09T21:00:00.001Z",
+      "endDate": "2025-12-10T21:00:00.000Z",
+      "userOwnerId": "user-1",
+      "listOwnerId": "6b52",
+      "isCompleted": false,
+      "isFavourite": false,
+      "order": 1766922684639
     }
   ],
   "lists": [

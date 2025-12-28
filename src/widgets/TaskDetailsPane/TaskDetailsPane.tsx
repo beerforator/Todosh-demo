@@ -48,7 +48,6 @@ export const TaskDetailsPane = React.memo((
             open={!!task.id}
             variant={variant}
             className={styleP.drawerStyle}
-            onBlur={handleClose}
         >
             <div className={styleP.drawerContainer + ' paperBlock ' + styleP.paneContainer}>
                 <PaneHeader handleClose={handleClose} />
